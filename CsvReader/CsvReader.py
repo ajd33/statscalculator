@@ -1,10 +1,9 @@
 import csv
+#from Fileutilities.absolutepath import absolutepath
 from Fileutilities.absolutepath import absolutepath
-
 
 def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
-
 
 class CsvReader:
     data = []
